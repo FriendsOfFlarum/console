@@ -1,0 +1,7 @@
+<?php
+
+require 'vendor/autoload.php';
+
+$server = new Flagrow\Console\Console\Server(__DIR__);
+
+$server->listen();

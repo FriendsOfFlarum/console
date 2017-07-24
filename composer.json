@@ -1,0 +1,44 @@
+{
+    "name": "flagrow/console",
+    "description": "Register custom commands into Flarum",
+    "keywords": [
+        "extension",
+        "flarum",
+        "flagrow",
+        "console"
+    ],
+    "type": "flarum-extension",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flagrow/console/issues",
+        "source": "https://github.com/flagrow/console"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.6"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Flagrow Console",
+            "icon": {
+                "name": "terminal",
+                "backgroundColor": "#f4f4f4",
+                "color": "#5f4bb6"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Flagrow\\Console\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/flagrow"
+    ]
+}
