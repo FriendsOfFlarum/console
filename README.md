@@ -1,5 +1,10 @@
 # ![flagrow logo](https://avatars0.githubusercontent.com/u/16413865?v=3&s=20) [Flagrow](https://discuss.flarum.org/d/1832-flagrow-extension-developer-group) Console, a project of [Gravure](https://gravure.io/).
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/flagrow/console/blob/master/LICENSE.md)
+[![Latest Stable Version](https://img.shields.io/packagist/v/flagrow/console.svg)](https://packagist.org/packages/flagrow/console)
+[![Total Downloads](https://img.shields.io/packagist/dt/flagrow/console.svg)](https://packagist.org/packages/flagrow/console)
+[![Support Us](https://img.shields.io/badge/patreon-support-yellow.svg)](https://www.patreon.com/flagrow)
+
 Because you can't extend the default Flarum console commands, this package adds an alternate `php vendor/bin/flagrow` command that uses events to register new commands.
 
 ## Install
