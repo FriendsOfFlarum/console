@@ -21,7 +21,8 @@
         "source": "https://github.com/flagrow/console"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.6"
+        "flarum/core": "^0.1.0-beta.6",
+        "illuminate/console": "5.1.*"
     },
     "extra": {
         "flarum-extension": {

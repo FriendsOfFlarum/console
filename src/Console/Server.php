@@ -3,9 +3,10 @@
 namespace Flagrow\Console\Console;
 
 use Flagrow\Console\Events\ConfigureConsoleApplication;
+use Flarum\Extension\ExtensionManager;
 use Flarum\Foundation\AbstractServer;
+use Illuminate\Console\Application;
 use Illuminate\Contracts\Events\Dispatcher;
-use Symfony\Component\Console\Application;
 
 /**
  * Console server for Flagrow
@@ -13,17 +14,6 @@ use Symfony\Component\Console\Application;
  */
 class Server extends AbstractServer
 {
-    public function __construct($basePath = null, $publicPath = null)
-    {
-        $basePath = str_replace([
-            '/vendor/bin',
-            '/vendor/flagrow/console/bin',
-            '/workbench/console/bin',
-        ], '', $basePath);
-
-        parent::__construct($basePath, $publicPath);
-    }
-
     public function listen()
     {
         $console = $this->getConsoleApplication();
@@ -37,9 +27,12 @@ class Server extends AbstractServer
     protected function getConsoleApplication()
     {
         $app = $this->getApp();
-        $console = new Application('Flarum', $app->version());
+        $app->make(ExtensionManager::class);
+        $events = $app->make(Dispatcher::class);
 
-        $events = app(Dispatcher::class);
+        $console = new Application($app, $events, $app->version());
+        $console->setName('Flagrow Console');
+
         $events->fire(new ConfigureConsoleApplication($app, $console));
 
         return $console;
