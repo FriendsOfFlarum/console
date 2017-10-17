@@ -8,7 +8,7 @@ $autoloaders = [
     __DIR__.'/../autoload.php' => __DIR__.'/../../',
     // inside vendor/flagrow/console/bin
     __DIR__.'/../../../autoload.php' => __DIR__ .'/../../../../',
-    // workbench
+    // inside workbench/*/bin
     __DIR__.'/../../../vendor/autoload.php' => __DIR__.'/../../../',
 ];
 
@@ -19,6 +19,6 @@ foreach ($autoloaders as $autoload => $basePath) {
     }
 }
 
-$server = new Console\Server($basePath);
+$server = new Console\Server(realpath($basePath));
 
 $server->listen();

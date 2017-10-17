@@ -1,11 +1,13 @@
 {
     "name": "flagrow/console",
-    "description": "Register custom commands into Flarum",
+    "description": "Register custom commands and task scheduling into Flarum",
     "keywords": [
         "extension",
         "flarum",
         "flagrow",
-        "console"
+        "console",
+        "cronjob",
+        "cron"
     ],
     "type": "flarum-extension",
     "license": "mit",
@@ -14,6 +16,11 @@
             "name": "Clark Winkelmann",
             "email": "clark.winkelmann@gmail.com",
             "homepage": "https://clarkwinkelmann.com/"
+        },
+        {
+          "name": "Daniël Klabbers",
+          "email": "daniel@klabbers.email",
+          "homepage": "http://luceos.com"
         }
     ],
     "support": {
@@ -21,7 +28,7 @@
         "source": "https://github.com/flagrow/console"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.6",
+        "flarum/core": "^0.1.0-beta.7",
         "illuminate/console": "5.1.*"
     },
     "extra": {

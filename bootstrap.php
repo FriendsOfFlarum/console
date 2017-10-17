@@ -2,8 +2,9 @@
 
 namespace Flagrow\Console;
 
-use Illuminate\Contracts\Events\Dispatcher;
+use Flarum\Foundation\Application;
 
-return function (Dispatcher $events) {
-    $events->subscribe(Listeners\AddFlarumCommands::class);
+return function (Application $app) {
+    // In case the extension is enabled.
+    $app->register(Providers\ConsoleProvider::class);
 };
