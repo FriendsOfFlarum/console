@@ -3,7 +3,7 @@
 namespace Flagrow\Console\Events;
 
 use Flarum\Foundation\Application as FlarumApplication;
-use Symfony\Component\Console\Application as ConsoleApplication;
+use Illuminate\Console\Application as ConsoleApplication;
 
 class ConfigureConsoleApplication
 {
