@@ -25,7 +25,7 @@ The real deal is using it in your own extension.
 Simply require it in your extension `composer.json` file:
 
     "require": {
-        "flagrow/console": "^0.1.0"
+        "flagrow/console": "^0.2"
     },
 
 And now listen for the `ConfigureConsoleApplication` event.
