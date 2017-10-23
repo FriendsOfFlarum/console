@@ -29,7 +29,11 @@ Simply require it in your extension `composer.json` file:
     },
 
 And now listen for the `ConfigureConsoleApplication` event.
-Have a look at the [AddFlarumCommands](src/Listeners/AddFlarumCommands.php) class and the [flagrow/serve](https://github.com/flagrow/serve) extension to see how it's done.
+Have a look at the [AddFlarumCommands](src/Listeners/AddFlarumCommands.php) class.
+
+Example implementations:
+- [flagrow/serve](https://github.com/flagrow/serve)
+- [flagrow/bazaar](https://github.com/flagrow/bazaar)
 
 ## Task Scheduling, cron jobs
 
@@ -38,7 +42,7 @@ resolves the `Illuminate\Console\Scheduling\Schedule` through IoC, then use its 
 for the command, see the [Task Scheduling documentation](https://laravel.com/docs/5.1/scheduling#defining-schedules).
 
 Example implementations:
-- [flagrow/bazaar]()
+- [flagrow/bazaar](https://github.com/flagrow/bazaar)
 
 ## Support our work
 
