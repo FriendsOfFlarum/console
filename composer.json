@@ -28,8 +28,8 @@
         "source": "https://github.com/flagrow/console"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.7",
-        "illuminate/console": "5.1.*",
+        "flarum/core": "^0.1.0-beta.8",
+        "illuminate/console": "5.5.*",
         "mtdowling/cron-expression": "*"
     },
     "extra": {
