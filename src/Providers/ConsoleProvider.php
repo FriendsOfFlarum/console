@@ -3,8 +3,8 @@
 namespace Flagrow\Console\Providers;
 
 use Flagrow\Console\Events\ConfigureConsoleApplication;
-use Flarum\Debug\Console\CacheClearCommand;
-use Flarum\Debug\Console\InfoCommand;
+use Flarum\Foundation\Console\CacheClearCommand;
+use Flarum\Foundation\Console\InfoCommand;
 use Flarum\Foundation\AbstractServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Console\Scheduling\ScheduleRunCommand;

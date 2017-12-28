@@ -3,7 +3,7 @@
 namespace Flagrow\Console\Console;
 
 use Flagrow\Console\Events\ConfigureConsoleApplication;
-use Flarum\Foundation\AbstractServer;
+use Flarum\Console\Server as AbstractServer;
 use Illuminate\Console\Application;
 use Illuminate\Contracts\Events\Dispatcher;
 
@@ -13,25 +13,17 @@ use Illuminate\Contracts\Events\Dispatcher;
  */
 class Server extends AbstractServer
 {
-    public function listen()
-    {
-        $console = $this->getConsoleApplication();
-
-        exit($console->run());
-    }
-
     /**
      * @return Application
      */
     protected function getConsoleApplication()
     {
-        $app = $this->getApp();
-        $events = $app->make(Dispatcher::class);
+        $events = $this->app->make(Dispatcher::class);
 
-        $console = new Application($app, $events, $app->version());
+        $console = new Application($this->app, $events, $this->app->version());
         $console->setName('Flagrow Console');
 
-        $events->fire(new ConfigureConsoleApplication($app, $console));
+        $events->fire(new ConfigureConsoleApplication($this->app, $console));
 
         return $console;
     }
