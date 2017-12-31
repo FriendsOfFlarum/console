@@ -27,7 +27,9 @@ class ConsoleProvider extends AbstractServiceProvider
     public function register()
     {
         // Override artisan path.
-        define('ARTISAN_BINARY', realpath(__DIR__ . '/../../bin/flagrow'));
+        if (!defined('ARTISAN_BINARY')) {
+            define('ARTISAN_BINARY', realpath(__DIR__ . '/../../bin/flagrow'));
+        }
 
         $this->app->singleton(Schedule::class);
 
