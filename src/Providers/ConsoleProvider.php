@@ -3,8 +3,8 @@
 namespace Flagrow\Console\Providers;
 
 use Flagrow\Console\Events\ConfigureConsoleApplication;
-use Flarum\Debug\Console\CacheClearCommand;
-use Flarum\Debug\Console\InfoCommand;
+use Flarum\Foundation\Console\CacheClearCommand;
+use Flarum\Foundation\Console\InfoCommand;
 use Flarum\Foundation\AbstractServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Console\Scheduling\ScheduleRunCommand;
@@ -27,7 +27,9 @@ class ConsoleProvider extends AbstractServiceProvider
     public function register()
     {
         // Override artisan path.
-        define('ARTISAN_BINARY', realpath(__DIR__ . '/../../bin/flagrow'));
+        if (!defined('ARTISAN_BINARY')) {
+            define('ARTISAN_BINARY', realpath(__DIR__ . '/../../bin/flagrow'));
+        }
 
         $this->app->singleton(Schedule::class);
 
