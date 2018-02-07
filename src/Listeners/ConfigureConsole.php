@@ -24,9 +24,7 @@ class ConfigureConsole
     {
         if ($event->app->isInstalled()) {
             foreach ($this->commands as $command) {
-                $event->console->add(
-                    $event->app->make($command)
-                );
+                $event->addCommand($command);
             }
         }
     }
