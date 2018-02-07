@@ -11,4 +11,9 @@ class ConsoleProvider extends AbstractServiceProvider
     {
         $this->app->singleton(Schedule::class);
     }
+
+    public function provides()
+    {
+        return [Schedule::class];
+    }
 }
