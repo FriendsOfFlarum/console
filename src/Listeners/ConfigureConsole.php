@@ -22,10 +22,8 @@ class ConfigureConsole
 
     public function configure(Configuring $event)
     {
-        if ($event->app->isInstalled()) {
-            foreach ($this->commands as $command) {
-                $event->addCommand($command);
-            }
+        foreach ($this->commands as $command) {
+            $event->addCommand($command);
         }
     }
 }
