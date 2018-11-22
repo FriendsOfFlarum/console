@@ -36,7 +36,7 @@
         "flarum-extension": {
             "title": "Flagrow Console",
             "icon": {
-                "name": "terminal",
+                "name": "fas fa-terminal",
                 "backgroundColor": "#f4f4f4",
                 "color": "#5f4bb6"
             }
