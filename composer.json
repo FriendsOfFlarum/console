@@ -9,7 +9,7 @@
         "cronjob",
         "cron"
     ],
-    "type": "flarum-extension",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -28,20 +28,10 @@
         "source": "https://github.com/flagrow/console"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.8",
-        "illuminate/console": "5.5.*",
+        "flarum/core": "^0.1.0-beta.9",
+        "illuminate/console": "5.7.*",
         "mtdowling/cron-expression": "^1.2.1",
         "symfony/process": "~3.3"
-    },
-    "extra": {
-        "flarum-extension": {
-            "title": "Flagrow Console",
-            "icon": {
-                "name": "fas fa-terminal",
-                "backgroundColor": "#f4f4f4",
-                "color": "#5f4bb6"
-            }
-        }
     },
     "autoload": {
         "psr-4": {
