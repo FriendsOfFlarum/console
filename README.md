@@ -10,11 +10,18 @@ The real deal is using it in your own extension.
 Simply require it in your extension `composer.json` file:
 
     "require": {
-        "flagrow/console": "^0.2"
+        "flagrow/console": "^0.5"
     },
 
-And now listen for the `ConfigureConsoleApplication` event.
-Have a look at the [AddFlarumCommands](src/Listeners/AddFlarumCommands.php) class.
+Now make sure the ConsoleProvider is registered inside Flarum. There's an Extender that helps you with that, inside
+your `extend.php` add:
+
+```php
+return [
+    new \Flagrow\Console\Extend\EnableConsole,
+  // .. your code
+];
+```
 
 Example implementations:
 - [flagrow/serve](https://github.com/flagrow/serve)
