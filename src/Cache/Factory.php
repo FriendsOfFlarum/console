@@ -1,6 +1,6 @@
 <?php
 
-namespace Flagrow\Console\Cache;
+namespace FoF\Console\Cache;
 
 use Illuminate\Contracts\Container\Container;
 
