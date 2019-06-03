@@ -29,12 +29,6 @@ To set a schedule, create a [Service Provider](https://laravel.com/docs/5.7/pack
 resolves the `Illuminate\Console\Scheduling\Schedule` through IoC, then use its methods to configure the schedule
 for the command, see the [Task Scheduling documentation](https://laravel.com/docs/5.7/scheduling#defining-schedules).
 
-## Security
-
-If you discover a security vulnerability within Console, please send an email to the Flagrow team at security@flagrow.io. All security vulnerabilities will be promptly addressed.
-
-Please include as many details as possible. You can use `php flarum info` to get the PHP, Flarum and extension versions installed.
-
 ## Links
 
 - [Source code on GitHub](https://github.com/friendsOfFlarum/console)
