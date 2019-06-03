@@ -1,6 +1,6 @@
 # Console
 
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/friendsofflarum/console/blob/master/LICENSE.md) [![Latest Stable Version](https://img.shields.io/packagist/v/friendsofflarum/console.svg)](https://packagist.org/packages/friendsofflarum/console) [![Total Downloads](https://img.shields.io/packagist/dt/friendsofflarum/console.svg)](https://packagist.org/packages/friendsofflarum/console)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/friendsofflarum/console/blob/master/LICENSE.md) [![Latest Stable Version](https://img.shields.io/packagist/v/fof/console.svg)](https://packagist.org/packages/fof/console) [![Total Downloads](https://img.shields.io/packagist/dt/fof/console.svg)](https://packagist.org/packages/fof/console)
 
 This package is meant for extension developers and offers the ability to add task scheduling to Flarum.
 
@@ -31,6 +31,6 @@ for the command, see the [Task Scheduling documentation](https://laravel.com/doc
 
 ## Links
 
-- [Source code on GitHub](https://github.com/friendsOfFlarum/console)
-- [Report an issue](https://github.com/friendsOfFlarum/console/issues)
-- [Download via Packagist](https://packagist.org/packages/friendsOfFlarum/console)
+- [Source code on GitHub](https://github.com/FriendsOfFlarum/console)
+- [Report an issue](https://github.com/FriendsOfFlarum/console/issues)
+- [Download via Packagist](https://packagist.org/packages/fof/console)
