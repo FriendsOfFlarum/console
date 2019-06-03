@@ -1,9 +1,9 @@
 <?php
 
-namespace Flagrow\Console\Providers;
+namespace FoF\Console\Providers;
 
-use Flagrow\Console\Cache\Factory;
-use Flagrow\Console\Listeners\ConfigureConsole;
+use FoF\Console\Cache\Factory;
+use FoF\Console\Listeners\ConfigureConsole;
 use Flarum\Foundation\AbstractServiceProvider;
 use Illuminate\Console\Scheduling\CacheEventMutex;
 use Illuminate\Console\Scheduling\CacheSchedulingMutex;

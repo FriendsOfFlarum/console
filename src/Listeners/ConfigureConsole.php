@@ -1,6 +1,6 @@
 <?php
 
-namespace Flagrow\Console\Listeners;
+namespace FoF\Console\Listeners;
 
 use Flarum\Console\Event\Configuring;
 use Illuminate\Console\Scheduling\ScheduleRunCommand;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Flagrow\Console\Console;
+namespace FoF\Console\Console;
 
-use Flagrow\Console\Events\ConfigureConsoleApplication;
+use FoF\Console\Events\ConfigureConsoleApplication;
 use Flarum\Console\Server as AbstractServer;
 use Illuminate\Console\Application;
 use Illuminate\Contracts\Events\Dispatcher;

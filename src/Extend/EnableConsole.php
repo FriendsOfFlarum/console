@@ -1,8 +1,8 @@
 <?php
 
-namespace Flagrow\Console\Extend;
+namespace FoF\Console\Extend;
 
-use Flagrow\Console\Providers\ConsoleProvider;
+use FoF\Console\Providers\ConsoleProvider;
 use Flarum\Extend\ExtenderInterface;
 use Flarum\Extension\Extension;
 use Illuminate\Contracts\Container\Container;
