@@ -11,7 +11,7 @@ class EnableConsole implements ExtenderInterface
 {
     public function extend(Container $container, Extension $extension = null)
     {
-        if (! in_array(ConsoleProvider::class, $container->getLoadedProviders())) {
+        if (! array_key_exists(ConsoleProvider::class, $container->getLoadedProviders())) {
             $container->register(ConsoleProvider::class);
         }
     }
