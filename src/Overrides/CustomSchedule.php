@@ -3,6 +3,7 @@
 namespace FoF\Console\Overrides;
 
 use Flarum\Foundation\Config;
+use Illuminate\Container\Container;
 use Illuminate\Console\Scheduling\Schedule;
 
 class CustomSchedule extends Schedule

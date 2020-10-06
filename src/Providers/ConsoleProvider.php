@@ -27,15 +27,12 @@ class ConsoleProvider extends AbstractServiceProvider
             return new CacheSchedulingMutex($app->make(Factory::class));
         });
 
-        $this->app->alias(Schedule::class, CustomSchedule::class);
+        $this->app->singleton(Schedule::class, function($current) {
+            return $this->app->make(CustomSchedule::class);
+        });
 
         $this->app->extend('flarum.console.commands', function ($existingCommands) {
             return array_merge($existingCommands, [ScheduleRunCommand::class]);
         });
-    }
-
-    public function provides()
-    {
-        return [CustomSchedule::class];
     }
 }
